@@ -131,32 +131,34 @@ We are a team of young professionals who have come together to bring cohesive ch
       <div class="tw-mx-auto tw-mt-32 tw-max-w-7xl tw-px-6 sm:tw-mt-40 lg:tw-px-8">
         <div class="tw-mx-auto tw-max-w-2xl lg:tw-mx-0">
           <h2 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-4xl">Our values</h2>
-          <p class="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.</p>
+          <p class="tw-mt-6 tw-text-lg tw-leading-8 tw-text-gray-600">At <span class="tw-text-gray-900 tw-font-bold"> Kind Beings </span>, we are guided by a set of core values that shape our mission, define our approach, and drive our commitment to making a positive impact in the world. These values underpin everything we do and inspire us to create lasting change.</p>
         </div>
         <dl class="tw-mx-auto tw-mt-16 tw-grid tw-max-w-2xl tw-grid-cols-1 tw-gap-x-8 tw-gap-y-16 tw-text-base tw-leading-7 sm:tw-grid-cols-2 lg:tw-mx-0 lg:tw-max-w-none lg:tw-grid-cols-3">
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Be world-class</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Empathy and Compassion:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We believe in the power of empathy and compassion to create a more inclusive and caring society. We strive to understand the needs and challenges of individuals and communities, and we approach our work with empathy and compassion, treating everyone with dignity and respect.</dd>
           </div>
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Share everything you know</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Integrity and Ethics:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We uphold the highest standards of integrity and ethics in all our actions. We are transparent, accountable, and committed to acting in the best interests of the communities we serve. We maintain honesty, fairness, and professionalism in our relationships with stakeholders, partners, and beneficiaries.</dd>
           </div>
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Always learning</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Equality and Social Justice:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We are dedicated to promoting equality, social justice, and human rights for all. We believe that every individual deserves equal opportunities and access to essential services, regardless of their background, gender, ethnicity, or socioeconomic status. We actively work towards dismantling barriers, advocating for fairness, and empowering marginalized and vulnerable groups.</dd>
           </div>
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Be supportive</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Sustainability and Environmental Stewardship:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We are committed to sustainable development and environmental stewardship. We recognize the importance of protecting our planet for future generations and incorporating sustainable practices into all our initiatives. We strive to minimize our ecological footprint, promote environmental awareness, and advocate for responsible use of resources.</dd>
           </div>
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Take responsibility</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Empowerment and Capacity Building:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We believe in the power of empowerment and capacity building. We aim to equip individuals and communities with the knowledge, skills, and resources they need to overcome challenges and create positive change. We provide training, education, and mentorship programs that foster self-reliance and empower individuals to take control of their lives.</dd>
           </div>
           <div>
-            <dt class="tw-font-semibold tw-text-gray-900">Enjoy downtime</dt>
-            <dd class="tw-mt-1 tw-text-gray-600">Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.</dd>
+            <dt class="tw-font-semibold tw-text-gray-900">Innovation and Adaptability:</dt>
+            <dd class="tw-mt-1 tw-text-gray-600">We embrace innovation and adaptability as catalysts for progress. We continuously seek innovative solutions to address emerging challenges and adapt our strategies to evolving circumstances. We encourage creativity, experimentation, and learning from both successes and failures to drive sustainable and impactful change.
+
+</dd>
           </div>
         </dl>
       </div>

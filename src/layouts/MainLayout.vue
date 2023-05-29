@@ -1,82 +1,76 @@
 <template>
   <q-layout view="lHh LPr lff">
-    <q-header class=" tw-bg-white ">
+    <q-header class="tw-bg-white">
       <section class="tw-border-b-2">
-      <div
-        class="tw-flex tw-mx-6 tw-flex tw-justify-between tw-items-center tw-bg-white"
-      >
-        <div class="q-pa-xs">
-          <q-img
-            height="63px"
-            width="210px"
-            img-class="tw-mt-1"
-            src="../assets/kind_beings_1.png"
-          />
-        </div>
-        <div class="tw-gap-x-4 tw-flex tw-text-black">
-          <div
-            @click="$router.push('/')"
-            class="tw-p-2 hover:tw-text-red-600 tw-flex tw-items-center cursor-pointer tw-self-end"
-          >
-            <div>
-              <q-icon name="fa-solid fa-house" class="tw-mx-2" color="" />
-            </div>
-            <div class="tw-mt-0.5">Home</div>
-          </div>
-          <div
-          @click="$router.push('/aboutus')"
-            class="tw-p-2 hover:tw-text-red-600 tw-flex tw-items-center cursor-pointer tw-self-end"
-          >
-            <div>
-              <q-icon
-                name="fa-sharp fa-solid fa-question"
-                class="tw-mx-2"
-                color=""
-              />
-            </div>
-            <div class="tw-mt-0.5">About US</div>
-          </div>
-          <div
-            class="tw-p-2 hover:tw-text-red-600 tw-flex tw-items-center cursor-pointer tw-self-end"
-          >
-            <div>
-              <q-icon name="fa-solid fa-bolt" class="tw-mx-2" color="" />
-            </div>
-            <div class="tw-mt-0.5">Our Impact</div>
-          </div>
-          <div
-            class="tw-p-2 hover:tw-text-red-600 tw-flex tw-items-center cursor-pointer tw-self-end"
-          >
-            <div>
-              <q-icon
-                name="fa-regular fa-face-smile"
-                class="tw-mx-2"
-                color=""
-              />
-            </div>
-            <div class="tw-mt-0.5">Our Approch</div>
-          </div>
-
-          <div>
-            <q-btn
-              no-caps
-              @click="$router.push('/contactus')"
-              flat
-              icon="phone"
-              label="Contact Us"
-              class="tw-hidden lg:tw-inline-block tw-ml-auto tw-mr-3 tw-py-2 tw-px-3 tw-bg-black tw-text-white tw-rounded-l-xl tw-rounded-t-xl"
-            ></q-btn>
-            <q-btn
-              no-caps
-              flat
-              label="Donate Now"
-              icon="favorite"
-              class="tw-hidden lg:tw-inline-block tw-ml-auto tw-py-2 tw-px-3 tw-bg-black tw-text-white tw-rounded-l-xl tw-rounded-t-xl"
+        <div
+          class="tw-flex tw-mx-6 tw-flex tw-justify-between tw-items-center tw-bg-white"
+        >
+          <div class="q-pa-xs">
+            <q-img
+              height="63px"
+              width="210px"
+              img-class="tw-mt-1"
+              src="../assets/kind_beings_1.png"
             />
           </div>
+          <div class="tw-gap-x-4 tw-flex tw-text-black">
+            <div
+              @click="$router.push('/home')"
+              class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
+              :class=" $route.path.includes('/home') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+            >
+              <div>
+                <q-icon name="fa-solid fa-house" class="tw-mx-2" color="" />
+              </div>
+              <div class="tw-mt-0.5">Home</div>
+            </div>
+            <div
+              @click="$router.push('/aboutus')"
+              class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
+              :class=" $route.path.includes('/aboutus') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+            >
+              <div>
+                <q-icon
+                  name="fa-sharp fa-solid fa-question"
+                  class="tw-mx-2"
+                  color=""
+                />
+              </div>
+              <div class="tw-mt-0.5">About Us</div>
+            </div>
+            <div
+            @click="$router.push('/ourimpact')"
+            class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
+              :class=" $route.path.includes('/ourimpact') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+            >
+              <div>
+                <q-icon name="fa-solid fa-bolt" class="tw-mx-2" color="" />
+              </div>
+              <div class="tw-mt-0.5">Our Impact</div>
+            </div>
+            <div>
+              <q-btn
+                no-caps
+                @click="$router.push('/contactus')"
+                flat
+                icon="phone"
+                label="Contact Us"
+                class="tw-hidden lg:tw-inline-block tw-ml-auto tw-mr-3 tw-py-2 tw-px-3 tw-bg-black tw-rounded-l-xl tw-rounded-t-xl"
+                :class=" $route.path.includes('/contactus') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-white'"
+              ></q-btn>
+              <q-btn
+                no-caps
+                @click="$router.push('/donatenow')"
+                :class=" $route.path.includes('/donatenow') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-white'"
+                flat
+                label="Donate Now"
+                icon="favorite"
+                class="tw-hidden lg:tw-inline-block tw-ml-auto tw-py-2 tw-px-3 tw-bg-black tw-text-white tw-rounded-l-xl tw-rounded-t-xl"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </q-header>
     <q-page-container class="">
       <router-view />
@@ -198,19 +192,18 @@
             </div>
           </div>
         </footer>
-    </section>
+      </section>
     </q-footer>
   </q-layout>
 </template>
 
 <script>
-import { defineComponent, ref, h } from 'vue'
+import { defineComponent, ref, h } from "vue";
 export default defineComponent({
-  name: 'MainLayout',
+  name: "MainLayout",
 
-  setup () {
+  setup() {
     return {
-
       navigation: ref({
         solutions: [
           { name: "Marketing", href: "#" },
@@ -307,18 +300,10 @@ export default defineComponent({
           },
         ],
       }),
-
-    }
+    };
   },
-  methods:{
-
-  },
-  mounted(){
-
-  },
-  created(){
-
-  }
-
-})
+  methods: {},
+  mounted() {},
+  created() {},
+});
 </script>

@@ -137,8 +137,8 @@
               <q-btn
                 no-caps
                 unelevated
-                color="red"
-                class="tw-rounded-xl tw-font-bold tw-border tw-w-full q-mx-xs"
+                color=""
+                class="tw-rounded-xl tw-bg-red-600 tw-font-bold tw-border tw-w-full q-mx-xs"
                 label="View More"
               />
             </q-card-actions>
@@ -147,50 +147,42 @@
       </div>
     </section>
     <section class="tw-bg-black tw-mt-9">
-      <div class="tw-py-12">
-        <div
-          class="tw-text-2xl tw-mb-10 tw-text-center tw-text-white tw-font-bold"
-        >
-          Our Impact
-        </div>
-        <div class="tw-max-w-7xl">
-          <div
-            class="tw-mx-auto tw-justify-items-center tw-grid tw-max-w-2xl tw-grid-cols-1 tw-gap-8 tw-overflow-hidden lg:tw-mx-0 lg:tw-max-w-none lg:tw-grid-cols-4"
-          >
-            <div v-for="item in timeline" :key="item.name">
-              <time
-                :datetime="item.dateTime"
-                class="tw-flex tw-items-center tw-text-sm tw-font-semibold tw-leading-6 tw-text-red-600"
+      <div class="tw-bg-black tw-py-12 sm:tw-py-12">
+        <div class="tw-mx-auto tw-max-w-7xl tw-px-6 lg:tw-px-8">
+          <div class="tw-mx-auto tw-max-w-2xl lg:tw-max-w-none">
+            <div class="tw-text-center">
+              <h2
+                class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-white sm:tw-text-4xl"
               >
-                <svg
-                  viewBox="0 0 4 4"
-                  class="tw-mr-4 tw-h-1 tw-w-1 tw-flex-none"
-                  aria-hidden="true"
-                >
-                  <circle cx="2" cy="2" r="2" fill="currentColor" />
-                </svg>
-                {{ item.date }}
-                <div
-                  class="tw-absolute tw--ml-2 tw-h-px tw-w-screen tw--translate-x-full tw-bg-white lg:tw-static tw--mr-20 tw-ml-8 tw-w-auto tw-flex-auto tw-translate-x-0"
-                  aria-hidden="true"
-                />
-              </time>
-              <p
-                class="tw-text-lg tw-font-semibold tw-leading-8 tw-tracking-tight tw-text-white"
-              >
-                {{ item.state }}
-              </p>
-              <p
-                class="tw-text-lg tw-font-semibold tw-leading-8 tw-tracking-tight tw-text-white"
-              >
-                {{ item.beneficiaries }}
-              </p>
-              <p
-                class="tw-text-lg tw-font-semibold tw-leading-8 tw-tracking-tight tw-text-white"
-              >
-                {{ item.volunteers }}
+                Our Impact
+              </h2>
+              <p class="tw-mt-4 tw-text-lg tw-leading-8 tw-text-gray-300">
+                At Kind Beings, we are driven by a relentless pursuit of creating meaningful and sustainable impact in the communities we serve. Through our dedicated efforts and collaborative initiatives, we have achieved significant milestones and transformed lives. Here are some highlights of our impact:
               </p>
             </div>
+            <div class="tw-text-center">
+              <dl
+              class="tw-mt-16 tw-grid tw-gap-0.5 tw-rounded-2xl sm:tw-grid-cols-3 lg:tw-grid-cols-3"
+            >
+              <div
+                v-for="stat in stats"
+                :key="stat.id"
+                class="tw-flex tw-flex-col tw-text-center bg-white/5 tw-p-8"
+              >
+                <dt
+                  class="tw-text-sm tw-font-semibold tw-leading-6 tw-text-gray-300"
+                >
+                  {{ stat.name }}
+                </dt>
+                <dd
+                  class="tw-order-first tw-text-3xl tw-font-semibold tw-tracking-tight tw-text-white"
+                >
+                  {{ stat.value }}
+                </dd>
+              </div>
+            </dl>
+            </div>
+
           </div>
         </div>
       </div>
@@ -260,31 +252,10 @@ export default defineComponent({
       slide: ref(1),
       autoplay: ref(true),
       expanded: ref(false),
-      timeline: ref([
-        {
-          beneficiaries: "200+ Beneficiaries",
-          volunteers: "10+ Volunteers",
-          date: "2018",
-          state: "1 State",
-        },
-        {
-          beneficiaries: "1500+ Beneficiaries",
-          volunteers: "450+ Volunteers",
-          date: "2019-20",
-          state: "3 State",
-        },
-        {
-          beneficiaries: "3000+ Beneficiaries",
-          volunteers: "1200+ Volunteers",
-          date: "2020-22",
-          state: "9 State",
-        },
-        {
-          beneficiaries: "4000+ Beneficiaries",
-          volunteers: "2000+ Volunteers",
-          date: "2023",
-          state: "12 State",
-        },
+      stats: ref([
+        { id: 1, name: "Beneficiary", value: "9,000+" },
+        { id: 2, name: "Volunteers", value: "1200+" },
+        { id: 3, name: "States", value: "9+" },
       ]),
       projects: ref([
         {
