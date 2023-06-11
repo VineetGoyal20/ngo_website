@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh LPr lff">
+  <q-layout view="lhh LPr lff">
     <q-header class="tw-bg-white">
       <section class="tw-border-b-2">
         <div
@@ -17,7 +17,11 @@
             <div
               @click="$router.push('/home')"
               class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
-              :class=" $route.path.includes('/home') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+              :class="
+                $route.path.includes('/home')
+                  ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200'
+                  : 'tw-text-black hover:tw-bg-gray-100'
+              "
             >
               <div>
                 <q-icon name="fa-solid fa-house" class="tw-mx-2" color="" />
@@ -27,7 +31,11 @@
             <div
               @click="$router.push('/aboutus')"
               class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
-              :class=" $route.path.includes('/aboutus') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+              :class="
+                $route.path.includes('/aboutus')
+                  ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200'
+                  : 'tw-text-black hover:tw-bg-gray-100'
+              "
             >
               <div>
                 <q-icon
@@ -39,9 +47,13 @@
               <div class="tw-mt-0.5">About Us</div>
             </div>
             <div
-            @click="$router.push('/ourimpact')"
-            class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
-              :class=" $route.path.includes('/ourimpact') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-black hover:tw-bg-gray-100'"
+              @click="$router.push('/ourimpact')"
+              class="tw-p-2 hover:tw-rounded-lg tw-flex tw-items-center cursor-pointer tw-self-end"
+              :class="
+                $route.path.includes('/ourimpact')
+                  ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200'
+                  : 'tw-text-black hover:tw-bg-gray-100'
+              "
             >
               <div>
                 <q-icon name="fa-solid fa-bolt" class="tw-mx-2" color="" />
@@ -56,12 +68,20 @@
                 icon="phone"
                 label="Contact Us"
                 class="tw-hidden lg:tw-inline-block tw-ml-auto tw-mr-3 tw-py-2 tw-px-3 tw-bg-black tw-rounded-l-xl tw-rounded-t-xl"
-                :class=" $route.path.includes('/contactus') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-white'"
+                :class="
+                  $route.path.includes('/contactus')
+                    ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200'
+                    : 'tw-text-white'
+                "
               ></q-btn>
               <q-btn
                 no-caps
                 @click="$router.push('/donatenow')"
-                :class=" $route.path.includes('/donatenow') ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200' : 'tw-text-white'"
+                :class="
+                  $route.path.includes('/donatenow')
+                    ? 'tw-text-white tw-bg-red-600 tw-rounded-lg tw-border-gray-200'
+                    : 'tw-text-white'
+                "
                 flat
                 label="Donate Now"
                 icon="favorite"
@@ -193,6 +213,49 @@
           </div>
         </footer>
       </section>
+
+      <section class="hidden">
+        <div
+          class="tw-mx-auto tw-max-w-7xl tw-overflow-hidden tw-px-6 tw-py-20 sm:tw-py-24 lg:tw-px-8"
+        >
+          <nav
+            class="tw--mb-6 columns-2 sm:tw-flex sm:tw-justify-center sm:tw-space-x-12"
+            aria-label="Footer"
+          >
+            <div
+              v-for="item in navigation.main"
+              :key="item.name"
+              class="tw-pb-6"
+            >
+              <a
+                :href="item.href"
+                class="tw-text-sm tw-leading-6 tw-text-gray-600 hover:tw-text-gray-900"
+                >{{ item.name }}</a
+              >
+            </div>
+          </nav>
+          <div class="tw-mt-10 tw-flex tw-justify-center tw-space-x-10">
+            <a
+              v-for="item in navigation.social"
+              :key="item.name"
+              :href="item.href"
+              class="tw-text-gray-400 hover:tw-text-gray-500"
+            >
+              <span class="tw-sr-only">{{ item.name }}</span>
+              <component
+                :is="item.icon"
+                class="tw-h-6 tw-w-6"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+          <p
+            class="tw-mt-10 tw-text-center tw-text-xs tw-leading-5 tw-text-gray-500"
+          >
+            &copy; 2020 Your Company, Inc. All rights reserved.
+          </p>
+        </div>
+      </section>
     </q-footer>
   </q-layout>
 </template>
@@ -228,6 +291,14 @@ export default defineComponent({
           { name: "Claim", href: "#" },
           { name: "Privacy", href: "#" },
           { name: "Terms", href: "#" },
+        ],
+        main: [
+          { name: "About", href: "#" },
+          { name: "Blog", href: "#" },
+          { name: "Jobs", href: "#" },
+          { name: "Press", href: "#" },
+          { name: "Accessibility", href: "#" },
+          { name: "Partners", href: "#" },
         ],
         social: [
           {
